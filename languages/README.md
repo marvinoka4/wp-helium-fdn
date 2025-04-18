@@ -21,8 +21,8 @@ The `languages/` folder contains translation files for the helium-fdn theme.
 6. Replace yourwebsite.com, yourdomain.com, Your Name, etc., before distributing.
    Example:
 7. "Report-Msgid-Bugs-To: https://marvinoka4.com/contact\n"
-   "Last-Translator: Marvin Okafor <support@marvinoka4.com>\n"
-   "Language-Team: Helium FDN Team <support@marvinoka4.com>\n"
+   "Last-Translator: Marvin Okafor <info@marvinoka4.com>\n"
+   "Language-Team: Helium FDN Team <info@marvinoka4.com>\n"
 
 ### More Resources
 - [WordPress i18n Guide](https://developer.wordpress.org/themes/functionality/internationalization/)
