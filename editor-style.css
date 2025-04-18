@@ -1,0 +1,68 @@
+/* Editor styles for Helium-Fdn */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+p {
+    margin-bottom: 1rem;
+}
+.alignleft {
+    float: left;
+    margin-right: 1rem;
+}
+.alignright {
+    float: right;
+    margin-left: 1rem;
+}
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* WordPress core classes */
+.wp-caption {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+.wp-caption-text {
+    font-size: 0.875rem;
+    color: #666;
+    text-align: center;
+}
+.gallery-caption {
+    font-size: 0.875rem;
+    color: #666;
+}
+.bypostauthor {
+    font-weight: bold;
+}
+.alignleft {
+    float: left;
+    margin-right: 1rem;
+}
+.alignright {
+    float: right;
+    margin-left: 1rem;
+}
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal;
+}
