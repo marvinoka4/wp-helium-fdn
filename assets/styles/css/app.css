@@ -1,5 +1,5 @@
 /**
- * Swiper 11.2.6
+ * Swiper 11.2.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: March 19, 2025
+ * Released on: May 19, 2025
  */
 @font-face {
   font-family: swiper-icons;
@@ -6524,6 +6524,69 @@ a .thumbnail:hover, a .thumbnail:focus {
   display: block;
 }
 
+.entry-content a,
+.widget a,
+#off-canvas a {
+  text-decoration: underline;
+  color: #0000EE;
+}
+.entry-content a:hover,
+.widget a:hover,
+#off-canvas a:hover {
+  text-decoration: none; /* Optional */
+}
+
+.skip-link.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.skip-link.screen-reader-text:focus {
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background: #fff;
+  padding: 10px;
+  color: #0000EE;
+  text-decoration: underline;
+  border: 2px solid #0000EE;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #0000EE;
+  outline-offset: 2px;
+}
+
+/* Navigation menus */
+
+.hamburger--elastic:focus,
+.close-button:focus,
+#off-canvas a:focus,
+#off-canvas button:focus {
+  outline: 2px solid #0000EE;
+  outline-offset: 2px;
+  background-color: #f0f0f0; /* Optional: Subtle highlight */
+}
+
+#main-menu a:focus {
+  outline: 2px solid #0000EE;
+  outline-offset: 2px;
+  background-color: #f0f0f0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid #0000EE;
+  outline-offset: 2px;
+}
+
 .header {
   padding-block: 14px;
   background: var(--color-light);
@@ -6778,6 +6841,10 @@ a .thumbnail:hover, a .thumbnail:focus {
 /*
  * Vortex Reverse
  */
+
+.hamburger:focus {
+  outline: 2px solid #000000;
+}
 
 .testimonial-slider-section {
   padding: 2rem 0;

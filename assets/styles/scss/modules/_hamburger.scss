@@ -31,3 +31,7 @@
 );
 
 @use "./hamburgers/hamburgers";
+
+.hamburger:focus {
+    outline: 2px solid #000000;
+}

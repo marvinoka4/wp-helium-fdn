@@ -4,3 +4,72 @@
   margin: 0 auto;
   display: block;
 }
+
+.entry-content a,
+.comment-content a,
+.widget a,
+#off-canvas a {
+    text-decoration: underline;
+    color: #0000EE;
+    &:hover {
+        text-decoration: none; /* Optional */
+    }
+}
+
+.skip-link.screen-reader-text {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.skip-link.screen-reader-text:focus {
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background: #fff;
+    padding: 10px;
+    color: #0000EE;
+    text-decoration: underline;
+    border: 2px solid #0000EE;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #0000EE;
+    outline-offset: 2px;
+}
+
+/* Navigation menus */
+.nav-menu a:focus,
+.menu-item a:focus {
+    outline: 2px solid #0000EE;
+    background-color: #f0f0f0; /* Optional: Highlight background */
+}
+
+.hamburger--elastic,
+.close-button,
+#off-canvas a,
+#off-canvas button {
+    &:focus {
+        outline: 2px solid #0000EE;
+        outline-offset: 2px;
+        background-color: #f0f0f0; /* Optional: Subtle highlight */
+    }
+}
+
+#main-menu a:focus {
+    outline: 2px solid #0000EE;
+    outline-offset: 2px;
+    background-color: #f0f0f0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 2px solid #0000EE;
+    outline-offset: 2px;
+}

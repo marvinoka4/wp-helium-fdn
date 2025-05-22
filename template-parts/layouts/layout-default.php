@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Default Layout
  *
@@ -9,7 +10,7 @@
     <?php get_template_part('template-parts/navigation/off-canvas-navigation'); ?>
     <div class="off-canvas-content" data-off-canvas-content>
         <?php get_template_part('template-parts/navigation/main-navigation'); ?>
-        <main class="site-main" id="content">
+        <main class="site-content" id="content">
             <div class="grid-container">
                 <?php
                 // Check for custom page template

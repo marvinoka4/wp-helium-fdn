@@ -2,7 +2,7 @@
     <?php get_template_part('template-parts/navigation/off-canvas-navigation'); ?>
     <div class="off-canvas-content" data-off-canvas-content>
         <?php get_template_part('template-parts/navigation/main-navigation'); ?>
-        <main class="site-main">
+        <main class="site-content" id="content">
             <div class="grid-container">
                 <div class="grid-x">
                     <div class="cell large-8">

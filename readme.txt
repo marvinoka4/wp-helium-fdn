@@ -21,6 +21,24 @@ Run npm install and gulp in the theme directory for development.
 == Changelog == 
 = 1.0.0 =
 Initial release.
+= 1.0.1 =
+- Fixed off-canvas menu click functionality while maintaining keyboard support.
+- Added underlined links in content areas for accessibility.
+- Enhanced skip link styling and functionality.
+- Added focus indicators for navigation, forms, and buttons.
+- Updated readme.txt with licenses for all third-party resources, including custom SVGs.
+- Confirmed all theme functions, classes, and hooks are prefixed.
+
+== Third-Party Resources ==
+== Third-Party Resources ==
+- jQuery: MIT License, https://jquery.org/license/
+- Foundation.js: MIT License, https://get.foundation/
+- What-Input.js: MIT License, https://github.com/ten1seven/what-input
+- Swiper: MIT License, https://swiperjs.com/
+- Google Fonts (Albert Sans, Questrial): SIL Open Font License, https://scripts.sil.org/OFL
+- Unicons: Apache 2.0 License, https://iconscout.com/unicons
+- site_logo.svg: GPLv2 or later, Created by MarvinOka4
+- star.svg: GPLv2 or later, Created by MarvinOka4
 
 == Copyright == 
 Helium-Fdn WordPress Theme, Copyright 2025 MarvinOka4. Helium-Fdn is distributed under the terms of the GNU GPL.

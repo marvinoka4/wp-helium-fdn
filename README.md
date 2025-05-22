@@ -34,7 +34,7 @@ A lightweight WordPress starter theme for developers, built with Foundation CSS,
 
      ```bash
      git clone https://github.com/marvinoka4/wp-helium-fdn.git wp-content/themes/helium-fdn
-     ```
+     ```scss
 
      Or download `helium-fdn.zip` from `https://marvinoka4.com` and upload via WordPress admin (`Appearance > Themes > Add New`).
 
@@ -44,7 +44,8 @@ A lightweight WordPress starter theme for developers, built with Foundation CSS,
 
      ```bash
      cd wp-content/themes/helium-fdn
-     ```
+     ```bash
+
    - Install Node.js dependencies:
 
      ```bash
@@ -58,6 +59,7 @@ A lightweight WordPress starter theme for developers, built with Foundation CSS,
      ```bash
      npx gulp
      ```
+
    - Generates `assets/styles/css/app.min.css` and `assets/scripts/js/app.min.js`.
 
 5. **Activate Theme**:
@@ -105,8 +107,7 @@ To host fonts locally (instead of Google Fonts), follow these steps:
 
    - Place font files (e.g., `.woff2`, `.woff`) in `assets/fonts/`. For example:
 
-     ```
-     assets/fonts/
+     ```assets/fonts/
        Questrial-Regular.woff2
        Questrial-Regular.woff
        AlbertSans-Regular.woff2
@@ -114,6 +115,7 @@ To host fonts locally (instead of Google Fonts), follow these steps:
        AlbertSans-Bold.woff2
        AlbertSans-Bold.woff
      ```
+
    - Obtain fonts from sources like Google Fonts (downloadable via `https://fonts.google.com`) or custom providers. Use `.woff2` for modern browsers and `.woff` as a fallback for broader compatibility.
 
 2. **Define Fonts in** `_settings.scss`:
@@ -148,6 +150,7 @@ To host fonts locally (instead of Google Fonts), follow these steps:
        font-display: swap;
      }
      ```
+
    - **Notes**:
      - `font-display: swap` ensures text renders with a fallback font during loading, improving performance.
      - Adjust `font-weight` and `font-style` based on your font files (e.g., `400` for regular, `700` for bold).
@@ -161,6 +164,7 @@ To host fonts locally (instead of Google Fonts), follow these steps:
      $body-font-family: "Questrial", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
      $heading-font-family: "Albert Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
      ```
+
    - Include system fonts as fallbacks for robustness.
 
 4. **Remove Google Fonts**:
@@ -174,6 +178,7 @@ To host fonts locally (instead of Google Fonts), follow these steps:
      // After
      // Remove or comment out the above line
      ```
+
    - Alternatively, check `assets/styles/scss/app.scss` for Google Fonts imports (e.g., `@import url('https://fonts.googleapis.com/...');`) and remove them.
 
 5. **Compile Changes**:
@@ -183,6 +188,7 @@ To host fonts locally (instead of Google Fonts), follow these steps:
      ```bash
      npx gulp sass
      ```
+
    - Verify `assets/styles/css/app.min.css` includes the local font definitions.
 
 6. **Best Practices**:
@@ -251,6 +257,7 @@ Customise utilities in `_settings.scss` (e.g., `$global-padding`) or add new cla
   ```php
   get_template_part('template-parts/content/custom');
   ```
+
 - **Page Templates**: Add custom page templates (e.g., `page-custom.php`):
 
   ```php
@@ -293,6 +300,7 @@ Helium-Fdn includes translations in `languages/` for:
    ```bash
    wp i18n make-mo wp-content/themes/helium-fdn/languages
    ```
+
 3. Set site language in WordPress admin (`Settings > General`).
 
 **Add New Translations**:
@@ -372,6 +380,14 @@ Email `info@marvinoka4.com` or open a GitHub issue at `https://github.com/marvin
 - **1.0.0** (April 2025):
   - Initial release with Foundation CSS, SCSS/Gulp, block pattern/style, translations, and local font support.
 
+- **1.0.1** (May 2025):
+  - Fixed off-canvas menu click functionality while maintaining keyboard support.
+  - Added underlined links in content areas for accessibility.
+  - Enhanced skip link styling and functionality.
+  - Added focus indicators for navigation, forms, and buttons.
+  - Updated readme.txt with licenses for all third-party resources, including custom SVGs.
+  - Confirmed all theme functions, classes, and hooks are prefixed.
+
 ## Helium-Fdn Pro
 
 A premium version with advanced features (e.g., additional block patterns, Customiser options) is in development. Join the mailing list at `https://marvinoka4.com` for updates.
@@ -379,6 +395,6 @@ A premium version with advanced features (e.g., additional block patterns, Custo
 ## Licences
 
 - **Helium-Fdn**: GNU General Public Licence v2 or later.
-- **Foundation CSS**: MIT Licence (https://get.foundation).
-- **Swiper.js**: MIT Licence (https://swiperjs.com).
-- **Questrial/Albert Sans Fonts**: SIL Open Font Licence (https://fonts.google.com).
+- **Foundation CSS**: MIT Licence (<https://get.foundation>).
+- **Swiper.js**: MIT Licence (<https://swiperjs.com>).
+- **Questrial/Albert Sans Fonts**: SIL Open Font Licence (<https://fonts.google.com>).
